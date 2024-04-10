@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft</title>
+    <link rel="stylesheet" href="./css/microsoft.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- <nav>導覽列</nav>
+    <header>輪播</header>
+    <main>主要內容</main>
+    <footer>頁尾區</footer> -->
+    <!-- 導覽列 -->
+    
+    <div class="nav">
+        <div class="logo"></div>
+        <div class="pc-menu"></div>
+        <div class="func-menu"></div>
+    </div>
+    <!-- 輪播 -->
+    <header><!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./image/Laptop-5-1920x600.webp" alt=""></div>
+              <div class="swiper-slide"><img src="./image/Surface-Pro-9-1920x600.avif" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </header>
+    <!-- 主要內容 -->
+    <!-- <main>
+        <section>三個選擇</section>
+        <section>四張圖片</section>
+        <section>一張大圖</section>
+        <section>四張圖片</section>
+        <section>其他 fb yt</section>
+        <div>回到首頁</div> -->
+    </main>
+    <!-- 頁尾區 -->
+    <!-- <footer>
+        <div>上方主要區</div>
+        <div>下方導覽列</div>
+    </footer> -->
+
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////// -->
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        autoplay:true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+<!-- ////////////////////////////////////////////////////////////////////// -->
+
+</body>
+
+</html>
